@@ -1,0 +1,71 @@
+@font-face {
+	font-family: "Gotham SSm A";
+	src: url("Gotham-ExtraLight.otf");
+	font-weight: 200;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-rendering: optimizeLegibility;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	height: 100%;
+}
+
+body {
+	font-family: "Gotham SSm A", sans-serif;
+	background: #ffd454;
+	color: #222;
+}
+
+div {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+a {
+	text-decoration: none;
+	color: #222;
+	-webkit-tap-highlight-color: transparent;
+	-webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+	color: #111;
+}
+
+a:focus {
+	outline: 0;
+}
+
+h1 {
+	font-size: 42px;
+	font-weight: 200;
+	line-height: 60px;
+	text-align: center;
+	margin-top: -30px;
+}
+
+.footer {
+	vertical-align: bottom;
+	position: fixed;
+	width: 100%;
+	bottom: 15px;
+	text-align: center;
+	font-size: large;
+}
+
+.footer span {
+	color: black;
+}
