@@ -3,14 +3,15 @@ $(window).keyup(function (e) {
 		var randomColor = "#000000".replace(/0/g, function () {
 			return (~~(Math.random() * 16)).toString(16);
 		});
-		$("body").css("background-color", randomColor);
-		$("h1").text(randomColor.toUpperCase());
 
 		var r = parseInt(randomColor.substr(1, 2), 16);
 		var g = parseInt(randomColor.substr(3, 2), 16);
 		var b = parseInt(randomColor.substr(5, 2), 16);
+
+		$("body").css("background-color", randomColor);
+		$("h1").html(`${randomColor.toUpperCase()}<br />rgb(${r},${g},${b})`);
+
 		var light = rgbToHsl(r, g, b);
-		// console.log(light);
 		if (light * 100 <= 50) {
 			$("h1").css("color", "white");
 			$("span").css("color", "white");
